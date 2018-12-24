@@ -5,9 +5,12 @@ class SelectLocation extends Component {
     return (
         <div>
             <p>Please select a location</p>
+            <SelectDivision/>
+            <SelectDistrict/>
+            <SelectPostOffice/>
         </div>
     );
   }
 }
-
+ 
 export default SelectLocation;
