@@ -4,12 +4,18 @@ import SelectLocation from './Component/SelectLocation/SelectLocation';
 import PersonalDetails from './Component/PersonalDetails/PersonalDetails';
 
 class App extends Component {
+  handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('submited');
+  }
+
   render() {
     return (
-      <div>
+      <form onSubmit={this.handleSubmit}>
         <SelectLocation/>
         <PersonalDetails/>
-      </div>
+        <input type="submit" value="Submit" />
+      </form>
     );
   }
 }
