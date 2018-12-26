@@ -9,6 +9,7 @@ class App extends Component {
     console.log('submited');
   }
 
+
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
